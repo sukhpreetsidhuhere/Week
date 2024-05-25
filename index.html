@@ -18,7 +18,7 @@
 
     <script>
         document.getElementById('boredButton').addEventListener('click', function() {
-            fetch('https://http.cat/[status_code]')
+            fetch('https://www.boredapi.com/api/activity/')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('activity').innerText = `Activity: ${data.activity}`;
